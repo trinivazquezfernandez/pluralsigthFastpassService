@@ -30,7 +30,7 @@ public class FastPassController {
 		
 		Predicate<FastPassCustomer> p = c-> c.getFastPassId().equals(fastpassid);
 		FastPassCustomer customer = customerlist.stream().filter(p).findFirst().get();
-		
+		System.out.println("customer details retrieved");
 		return customer;
 	}
 	
@@ -39,7 +39,7 @@ public class FastPassController {
 		
 		Predicate<FastPassCustomer> p = c-> c.getFastPassPhone().equals(fastpassphone);
 		FastPassCustomer customer = customerlist.stream().filter(p).findFirst().get();
-		
+		System.out.println("customer details retrieved");
 		return customer;
 	}
 
